@@ -1,5 +1,5 @@
 body{
-    background-image: url("../assets/nnneon.svg");
+    background-image: url("../Images-main/nnneon.svg");
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,13 +22,13 @@ form .btn:hover{
     border-color: #ff5b57;
 }
 #username{
-    background-image: url("../assets/person.svg");
+    background-image: url("../Images-main/person.svg");
     background-repeat: no-repeat;
     background-position-y: center;
     text-indent: 20px;
 }
 #password{
-    background-image: url("../assets/shield-lock.svg");
+    background-image: url("../Images-main/shield-lock.svg");
     background-repeat: no-repeat;
     background-position-y: center;
     text-indent: 20px;

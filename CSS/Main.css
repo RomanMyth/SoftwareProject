@@ -1,0 +1,35 @@
+body{
+    background-image: url("../Images-main/nnneon.svg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vh;
+    background-position-y: 0;
+    color: white;
+    height: 100vh;
+}
+form{
+    background-color: white;
+    opacity: .8;
+}
+form .btn{
+    background-color: #aae4d6;
+    border-color: #aae4d6;
+    transition: 0.6s;
+}
+form .btn:hover{
+    background-color: #ff5b57;
+    border-color: #ff5b57;
+}
+#username{
+    background-image: url("../Images-main/person.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    text-indent: 20px;
+}
+#password{
+    background-image: url("../Images-main/shield-lock.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    text-indent: 20px;
+}

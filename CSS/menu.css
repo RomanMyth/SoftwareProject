@@ -3,3 +3,37 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#botLeft {
+    width: 33%;
+    display: flex;
+    justify-content: left;
+}
+
+#botMid{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+#botRight {
+    width: 33%;
+    display: flex;
+    justify-content: right;
+}
+
+.iconLink:visited{
+    color: black;
+}
+
+.botIcons{
+    width: 20px;
+    height: 20px;
+}
+

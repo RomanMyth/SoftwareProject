@@ -1,16 +1,17 @@
 body{
-    background-image: url("../Images-main/nnneon.svg");
-    background-color: black;
+    background-image: url("../Images-main/venice-italy-shutterstock-279340874-e1579194677902.jpg");
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vh;
+    background-size: cover;
     background-position-y: 0;
     color: white;
     height: 100vh;
+   
 }
 form{
-    background-color: white;
-    opacity: .8;
+    background-color: black;
+    opacity: .95;
 }
 form .btn{
     background-color: #aae4d6;

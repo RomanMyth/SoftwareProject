@@ -17,6 +17,7 @@
     width: 33%;
     display: flex;
     justify-content: left;
+    padding-left: 40px;
 }
 
 #botMid{
@@ -29,6 +30,7 @@
     width: 33%;
     display: flex;
     justify-content: right;
+    padding-right: 40px;
 }
 
 .iconLink:visited{

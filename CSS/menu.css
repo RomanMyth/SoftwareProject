@@ -169,7 +169,28 @@ h2{
 
 }
 
+#italian{
+    display: flex;
+    background-color: red;
+}
+
 #Guest{
 height: 60px;
 width: auto;
+}
+
+#overlay{
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-info{
+    visibility: hidden;
 }

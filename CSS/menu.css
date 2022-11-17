@@ -52,13 +52,19 @@ width: auto;
     height: 20px;
 }
 
+#sitemap-con{
+    margin: auto;
+    width: 70%;
+}
+
 img{
-    width: 50px;
+    width: 75px;
     height: auto;
 }
 #map-top{
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 #map-bottom{
     display: flex;
@@ -68,11 +74,27 @@ a{
     text-decoration: none;
 }
 
+h2{
+    margin: 20px 0;
+}
+
 .map-4{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 30%;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+
+.map-4:first-child{
+    border-right: 1px solid black;
+    padding-right: 60px;
+}
+
+.map-4:last-child{
+    border-left: 1px solid black;
+    padding-left: 60px;
 }
 
 .map-3{
@@ -82,17 +104,56 @@ a{
     width: 20%;
 }
 
+.map-3:nth-child(even){
+    border-bottom: 1px solid black;
+    padding: 0 calc((100%-80%) / 15);
+}
+
 .map-5{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 40%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0 40px;
 }
-.map-2{
+
+#pasta-pic-con{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 15%;
+    justify-content: space-around;
+    
+}
+
+#soup-pic-con{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#sides-pic-con{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#anti-pic-con{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#protein-pic-con{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#sweet-pic-con{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .body{

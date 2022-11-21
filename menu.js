@@ -5,6 +5,6 @@ $(document).ready(function(){
     });
     $(".close").click(function(){
         $("#overlay").css("visibility", "hidden");
-        $(this.parentElement).css("visibility", "hidden");
+        $(this.parentElement.parentElement).css("visibility", "hidden");
     });
 });

@@ -194,3 +194,8 @@ width: auto;
 .items-info{
     visibility: hidden;
 }
+
+.row{
+display: flex;
+
+}

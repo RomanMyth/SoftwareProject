@@ -165,7 +165,7 @@ h2{
     background-image: linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)) ,url("../Images-main/Lake-Como.PNG");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    position: fixed;
 
 }
 

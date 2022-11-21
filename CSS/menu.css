@@ -216,12 +216,7 @@ h2{
     border-bottom-left-radius: 15px;
 }
 
-#soups{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-}
+
 
 .info-con{
     display: flex;
@@ -237,4 +232,43 @@ h2{
 
 .more-info{
     visibility: hidden;
+}
+
+#sweets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+#anti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+#protein{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+#pasta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+#soups{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+#sides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
 }

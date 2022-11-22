@@ -210,10 +210,57 @@ h2{
 .items-info{
     visibility: hidden;
     position: absolute;
+    height: 45%;
+    width: 45%;
+    background-color: rgba(236, 228, 228);
+    
 }
 
+.itemHead{
+    font-size: 40px;
+    font-weight: bold;
+}
 .row{
     display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+}
+
+.row2{
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+}
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredHead{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.ingredBody{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.cals{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-self: center;
 }
 
 #menu-con{

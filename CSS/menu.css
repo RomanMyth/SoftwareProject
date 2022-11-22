@@ -9,6 +9,7 @@
     align-items: center;
     border-bottom: 1px solid black;
     padding-bottom: 5px;
+   background-image: url(../Images-main/istockphoto-1140979659-612x612.jpg);
 }
 
 #Slogan{
@@ -59,7 +60,13 @@ width: auto;
 
 #sitemap-con{
     margin: auto;
-    width: 70%;
+    width: 85%;
+    background-color: rgba(236, 228, 228, 0.932);
+    border: 1px solid black;
+    border-radius: 15px;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-top: 8%;
 }
 
 img{
@@ -162,7 +169,7 @@ h2{
 }
 
 .body{
-    background-image: linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)) ,url("../Images-main/Lake-Como.PNG");
+    background-image: linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)) ,url("../Images-main/spons-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -271,4 +278,16 @@ h2{
     flex-direction: column;
     align-items: center;
     width: 40%;
+}
+
+.banner{
+    background-image: url(../Images-main/istockphoto-1140979659-612x612.jpg);
+width: 165%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 75px;
+height: 80px;
+margin-bottom: 30px;
+margin-top: 30px;
 }

@@ -187,6 +187,7 @@ h2{
     border: 1px solid black;
     border-radius: 15px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 #Guest{
@@ -347,6 +348,6 @@ justify-content: center;
 align-items: center;
 border-radius: 75px;
 height: 80px;
-margin-bottom: 30px;
+margin-bottom: 40px;
 margin-top: 30px;
 }

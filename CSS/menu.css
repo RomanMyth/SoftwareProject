@@ -261,6 +261,13 @@ h2{
     width: 40px;
     display: flex;
     align-self: center;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.close:hover{
+   background-color: maroon;
+   color: azure;
 }
 
 #menu-con{

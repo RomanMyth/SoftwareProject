@@ -103,16 +103,18 @@ h2{
     width: 30%;
     border-bottom: 1px solid black;
     padding-bottom: 40px;
+    padding-right: 60px;
+    padding-left: 60px;
 }
 
 .map-4:first-child{
     border-right: 1px solid black;
-    padding-right: 60px;
+  
 }
 
 .map-4:last-child{
     border-left: 1px solid black;
-    padding-left: 60px;
+  
 }
 
 .map-3{
@@ -124,7 +126,7 @@ h2{
 
 .map-3:nth-child(even){
     border-bottom: 1px solid black;
-    padding: 0 calc((100%-80%) / 15);
+    padding: 0 50px
 }
 
 .map-5{
@@ -140,7 +142,7 @@ h2{
 #pasta-pic-con{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+   
     
 }
 
@@ -165,7 +167,7 @@ h2{
 #protein-pic-con{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #sweet-pic-con{
@@ -364,4 +366,86 @@ border-radius: 75px;
 height: 80px;
 margin-bottom: 40px;
 margin-top: 30px;
+}
+
+.food{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+
+}
+
+
+
+#pasta-pic-con img{
+    width: 100%;
+ 
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+#pasta-pic-con img:hover{
+    opacity: 1;
+    transform: scale(1.00);
+}
+
+#soup-pic-con img{
+    width: 100%;
+ 
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+#soup-pic-con img:hover{
+    opacity: 1;
+    transform: scale(1.00);
+}
+
+#sides-pic-con img{
+    width: 100%;
+ 
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+#sides-pic-con img:hover{
+    opacity: 1;
+    transform: scale(1.00);
+}
+
+#anti-pic-con img{
+    width: 100%;
+ 
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+#anti-pic-con img:hover{
+    opacity: 1;
+    transform: scale(1.00);
+}
+
+#protein-pic-con img{
+    width: 100%;
+ 
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+#protein-pic-con img:hover{
+    opacity: 1;
+    transform: scale(1.00);
+}
+
+#sweet-pic-con img{
+    width: 100%;
+ 
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+#sweet-pic-con img:hover{
+    opacity: 1;
+    transform: scale(1.00);
 }

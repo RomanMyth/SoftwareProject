@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* Header */
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -21,6 +23,8 @@ width: auto;
 height: 95px;
 width: auto;
 }
+
+/* Footer */
 
 #footer {
     display: flex;
@@ -57,6 +61,8 @@ width: auto;
     width: 20px;
     height: 20px;
 }
+
+/* Sitemap */
 
 #sitemap-con{
     margin: auto;
@@ -168,6 +174,8 @@ h2{
     justify-content: space-around;
 }
 
+/* Body */
+
 .body{
     background-image: linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)) ,url("../Images-main/spons-1.jpg");
     background-repeat: no-repeat;
@@ -194,6 +202,8 @@ h2{
     height: 60px;
     width: auto;
 }
+
+/* Food Item Overlay */
 
 #overlay{
     background-color:rgba(0, 0, 0, .7);
@@ -270,6 +280,8 @@ h2{
    color: azure;
 }
 
+/* Main */
+
 #menu-con{
     display: flex;
     flex-direction: column;
@@ -300,6 +312,8 @@ h2{
 .more-info{
     visibility: hidden;
 }
+
+/* Main Sections */
 
 #sweets{
     display: flex;

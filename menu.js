@@ -163,10 +163,10 @@ $(document).ready(function(){
             scrollTop: $("#mozz").offset().top}
             , 'slow'); 
     });
-    $("#grilled-pic").click(function() {
+    $("#zucc-pic").click(function() {
         console.log("test");
         $('html,body').animate({
-            scrollTop: $("#grilled").offset().top}
+            scrollTop: $("#zucc").offset().top}
             , 'slow'); 
     });
     $("#cParm-pic").click(function() {

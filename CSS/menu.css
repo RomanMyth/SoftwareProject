@@ -310,8 +310,21 @@ h2{
 }
 
 .price{
-    font-size: 47px;
+    font-size: 41px;
     text-align: center;
+}
+
+.addBtn{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 7px 20px 7px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.addBtn:hover{
+    background-color: salmon;
 }
 
 .itemPrice{

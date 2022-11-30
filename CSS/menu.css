@@ -74,6 +74,7 @@ width: auto;
     align-items: center;
     padding-bottom: 40px;
     margin-top: 8%;
+    
 }
 
 img{
@@ -110,7 +111,6 @@ h2{
 
 .map-4:first-child{
     border-right: 1px solid black;
-  
 }
 
 .map-4:last-child{
@@ -138,6 +138,7 @@ h2{
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding: 0 40px;
+    
 }
 
 #pasta-pic-con{
@@ -195,8 +196,10 @@ h2{
 .item{
     display: flex;
     background-color: rgba(236, 228, 228, 0.932);
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 0px solid black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
     width: 100%;
     margin-bottom: 10px;
 }

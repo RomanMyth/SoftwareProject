@@ -39,3 +39,8 @@ form .btn:hover{
     background-position-y: center;
     text-indent: 20px;
 }
+textarea{
+    min-height: 5em;
+    max-height: fit-content;
+    resize: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Paradiso Report An Issue Page
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./CSS/signup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    </head>
+    <body class = "d-flex  justify-content-center">
+        <form class = "align-self-center p-5 text-dark rounded-3">
+            <h2 class = "text-center mb-3" style="color:white">Report An Issue</h2>
+            <div class = "container">
+                <!-- Email -->
+                <div class="row">
+                    <div class="col"><label for="username">Email Address: </label></div>
+                    <div class="col"><input type="text" name="username" id="username" placeholder="johnDoe@gmail.com" requireds></div>
+            </div>
+            <br>
+                <!-- Username -->
+                <div class = "row">
+                    <div class = "col"><label for="username">Username: </label></div>
+                    <div class = "col"> <input type="text" name="username" id="username" placeholder="johndoe33" required></div>
+                </div>
+                <br>
+                <div class="row">
+                    <!-- Full Name -->
+                    <div class = "col"><label for="password">Full Name: </label></div>
+                    <div class = "col"><input type="password" name="password" id="password" placeholder="John Doe" required></div>
+                </div>
+                <br>
+                <!--Message-->
+                <div class="row">
+                        <div class="col"><label for="message">Message: </label></div>
+                        <div class="col"><textarea name="message" placeholder="I am concerned with..." required></textarea></div>
+                </div>
+            </div>
+            
+            <br><br>
+            <!-- Buttons -->
+            <span class = "d-flex justify-content-center">
+                <a href="./menu.html" class = "btn">Submit</a>
+            </span>
+            <br>
+            <span class = "d-flex justify-content-center" style="color: white;">
+                 <a href="./menu.html" class="btn">Return To Menu</a>
+            </span>
+        </form>
+    </body>
+</html>

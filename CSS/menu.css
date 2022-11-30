@@ -457,3 +457,34 @@ margin-top: 30px;
     opacity: 1;
     transform: scale(1.00);
 }
+
+#cart-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(0, 0, 0, .7);
+    width: 75%;
+    margin: auto;
+}
+
+#cart-banner{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    height: 80px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    color: white
+}
+
+#cart-banner h1{
+    display: flex;
+    align-items: center;
+}
+
+#cart-items-con{
+    width: 65%;
+    height: 100px;
+}

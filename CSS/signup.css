@@ -7,6 +7,7 @@ body{
     background-position-y: 0;
     color: white;
     height: 100vh;
+    font-family: 'Raleway', sans-serif;
 }
 form{
     background-color: black ;

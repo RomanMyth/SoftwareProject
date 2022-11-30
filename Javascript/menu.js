@@ -79,10 +79,10 @@ $(document).ready(function(){
     });
 
     $(".item").mouseover(function(){
-        $(this).children(':nth-child(2)').children(':nth-child(3)').css("visibility", "visible");
+        $(this).children(':nth-child(2)').children(':nth-child(4)').css("visibility", "visible");
     });
     $(".item").mouseleave(function(){
-        $(this).children(':nth-child(2)').children(':nth-child(3)').css("visibility", "hidden");
+        $(this).children(':nth-child(2)').children(':nth-child(4)').css("visibility", "hidden");
     });
 
     $("#alfredo-pic").click(function() {

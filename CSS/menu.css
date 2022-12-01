@@ -45,10 +45,10 @@ width: auto;
 
 #footerleftlink:link{
     margin-left: 5px;
-    color: #000;
 }
+
 #footerleftlink:hover{
-    color: blue;
+    color: red;
 }
 
 #botMid{
@@ -57,6 +57,8 @@ width: auto;
     justify-content: center;
 }
 
+/* Footer Right and Icons */
+
 #botRight {
     width: 33%;
     display: flex;
@@ -64,14 +66,38 @@ width: auto;
     padding-right: 40px;
 }
 
+.iconLink:link{
+    color: #000;
+}
+
 .iconLink:visited{
-    color: black;
+    color: #000;
+}
+
+.icontw:hover{
+    color: #00acee;
+}
+
+.iconfb:hover{
+    color: #3b5998;
+}
+
+.iconig:hover{
+    color: #cd486b;
+}
+
+.icontb:hover{
+    color: #34526f;
 }
 
 .botIcons{
     width: 20px;
     height: 20px;
     margin: 0px 10px;
+}
+
+.iconLink:active{
+    color: #ddd;
 }
 
 /* Sitemap */
@@ -85,7 +111,6 @@ width: auto;
     align-items: center;
     padding-bottom: 40px;
     margin-top: 8%;
-    
 }
 
 img{
@@ -126,7 +151,6 @@ h2{
 
 .map-4:last-child{
     border-left: 1px solid black;
-  
 }
 
 .map-3{
@@ -155,8 +179,6 @@ h2{
 #pasta-pic-con{
     width: 100%;
     display: flex;
-   
-    
 }
 
 #soup-pic-con{
@@ -210,7 +232,6 @@ h2{
     border: 0px solid black;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    
     width: 100%;
     margin-bottom: 10px;
 }

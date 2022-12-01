@@ -484,6 +484,8 @@ margin-top: 30px;
     transform: scale(1.00);
 }
 
+/* Cart */
+
 #cart-con{
     display: flex;
     flex-direction: column;

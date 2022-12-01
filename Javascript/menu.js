@@ -6,69 +6,113 @@ $(document).ready(function(){
 
     $("#italian").click(function(){
         $("#italian-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#zuppa").click(function(){
         $("#zuppa-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#gnocchi").click(function(){
         $("#gnocchi-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#arancini").click(function(){
         $("#arancini-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#mozz").click(function(){
         $("#mozz-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#zucc").click(function(){
         $("#zucc-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#alfredo").click(function(){
         $("#alfredo-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#cScampi").click(function(){
         $("#cScampi-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#sScampi").click(function(){
         $("#sScampi-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#penne").click(function(){
         $("#penne-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#cParm").click(function(){
         $("#cParm-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#eParm").click(function(){
         $("#eParm-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#HotDog").click(function(){
         $("#HotDog-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#porchetta").click(function(){
         $("#porchetta-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#stromboli").click(function(){
         $("#stromboli-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#ice").click(function(){
         $("#ice-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#cheesecake").click(function(){
         $("#cheesecake-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#cannoli").click(function(){
         $("#cannoli-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#bread").click(function(){
         $("#bread-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#salad").click(function(){
         $("#salad-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#risotto").click(function(){
         $("#risotto-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
     $("#chard").click(function(){
         $("#chard-info").css("visibility", "visible");
+    }).children(':nth-child(2)').children(':nth-child(3)').click(function(e){
+        return false;
     });
 
 
@@ -216,5 +260,43 @@ $(document).ready(function(){
         $('html,body').animate({
             scrollTop: $("#cannoli").offset().top}
             , 'slow'); 
+    });
+    
+    //add to cart
+    $(".addBtn").click(function(){
+        var item = this.parentElement.firstElementChild.innerHTML;
+        var price = $(this.parentElement).children().eq(1)[0].innerHTML;
+        var src = $(this.parentElement.parentElement.firstElementChild).attr('src');
+        console.log(item, price, src);
+
+        var addedItems = $('.addedItems');
+
+        for(var i = 0; i < addedItems.length; i++){
+            if(addedItems[i].innerHTML == item){
+                alert("this was already added");
+                return;
+            }
+        }
+        var cartItem = document.createElement('div');
+        $(cartItem).addClass('cart-item');
+
+        console.log("test");
+        var content = 
+            `
+                <input type="number" value="1">
+                <div>${price}</div>
+                <img src="${src}" alt="">
+                <div class="addedItems">${item}</div>
+                <div class="removeBtn">Remove</div>
+            `;
+
+        cartItem.innerHTML = content;
+        $('#cart-items-con').append(cartItem);
+
+    });
+
+    //remove from cart
+    $(document).on("click", ".removeBtn", function(){
+        this.parentElement.remove();
     });
 });

@@ -581,3 +581,16 @@ text-align: center;
     color: black;
     
 }
+
+.cart-checkout{
+  border-top: 1px solid white;
+    color: white;
+display: flex;
+justify-content:space-around;
+align-items: center;
+width: 100%;
+font-size: 25px;
+padding-bottom: 15px;
+padding-top: 10px;
+margin-top: 10px;
+}

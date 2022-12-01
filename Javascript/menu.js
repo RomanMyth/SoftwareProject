@@ -119,7 +119,12 @@ $(document).ready(function(){
     $(".close").click(function(){
         $("#overlay").css("visibility", "hidden");
         $(".body").css("overflow-y", "visible");
-        $(this.parentElement.parentElement).css("visibility", "hidden");
+        if($(this.parentElement).attr('id') == "add-error"){
+            $(this.parentElement).css("visibility", "hidden");
+        }
+        else{
+            $(this.parentElement.parentElement).css("visibility", "hidden");
+        } 
     });
 
     $(".item").mouseover(function(){
@@ -273,8 +278,14 @@ $(document).ready(function(){
 
         for(var i = 0; i < addedItems.length; i++){
             if(addedItems[i].innerHTML == item){
-                alert("this was already added");
+                $("#overlay").css("visibility", "visible");
+                $(".body").css("overflow-y", "hidden");
+                $("#add-error").css("visibility", "visible");
                 return;
+            }
+            else if(i == addedItems.length -1){
+                $("#added-to").fadeTo(250, 1.0);
+                $("#added-to").delay(750).fadeTo(250, 0.0);
             }
         }
         var cartItem = document.createElement('div');

@@ -284,10 +284,16 @@ $(document).ready(function(){
                 return;
             }
             else if(i == addedItems.length -1){
-                $("#added-to").fadeTo(250, 1.0);
-                $("#added-to").delay(750).fadeTo(250, 0.0);
+                $("#added-to").css('display', 'flex').hide().fadeIn('normal');
+                $("#added-to").delay(750).fadeOut('normal');
             }
         }
+        
+        if(addedItems.length == 0){
+            $("#added-to").css('display', 'flex').hide().fadeIn('normal');
+            $("#added-to").delay(750).fadeOut('normal');
+        }
+
         var cartItem = document.createElement('div');
         $(cartItem).addClass('cart-item');
 

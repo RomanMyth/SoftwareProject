@@ -600,6 +600,7 @@ margin-top: 10px;
     height: 100px;
     padding: 10px;
     padding-bottom: 20px;
+    visibility: hidden;
 }
 
 #add-error div{
@@ -611,16 +612,17 @@ margin-top: 10px;
 }
 
 #added-to{
-    position: fixed;
-    top: calc(50% - 75px);
-    left: calc(50% - 200px);
     width: 400px;
     height: 150px;
+    position: fixed;
+    top: calc(50% - 75px);
+    bottom: calc(50% - 200px);
     background-color:rgb(74, 207, 40);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    opacity: 0;
+    display: none;
     border-radius: 15px;
+    text-align: center;
 }

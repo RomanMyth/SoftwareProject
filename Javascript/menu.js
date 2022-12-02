@@ -135,133 +135,133 @@ $(document).ready(function(){
     });
 
     $("#alfredo-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#alfredo").offset().top}
             , 'slow'); 
     });
     $("#cScampi-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#cScampi").offset().top}
             , 'slow'); 
     });
     $("#sScampi-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#sScampi").offset().top}
             , 'slow'); 
     });
     $("#penne-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#penne").offset().top}
             , 'slow'); 
     });
     $("#italian-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#italian").offset().top}
             , 'slow'); 
     });
     $("#zuppa-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#zuppa").offset().top}
             , 'slow'); 
     });
     $("#gnocchi-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#gnocchi").offset().top}
             , 'slow'); 
     });
     $("#bread-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#bread").offset().top}
             , 'slow'); 
     });
     $("#salad-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#salad").offset().top}
             , 'slow'); 
     });
     $("#risotto-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#risotto").offset().top}
             , 'slow'); 
     });
     $("#chard-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#chard").offset().top}
             , 'slow'); 
     });
     $("#arancini-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#arancini").offset().top}
             , 'slow'); 
     });
     $("#mozz-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#mozz").offset().top}
             , 'slow'); 
     });
     $("#zucc-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#zucc").offset().top}
             , 'slow'); 
     });
     $("#cParm-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#cParm").offset().top}
             , 'slow'); 
     });
     $("#eParm-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#eParm").offset().top}
             , 'slow'); 
     });
     $("#HotDog-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#HotDog").offset().top}
             , 'slow'); 
     });
     $("#porchetta-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#porchetta").offset().top}
             , 'slow'); 
     });
     $("#stromboli-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#stromboli").offset().top}
             , 'slow'); 
     });
     $("#ice-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#ice").offset().top}
             , 'slow'); 
     });
     $("#cheesecake-pic").click(function() {
-        console.log("test");
+        
         $('html,body').animate({
             scrollTop: $("#cheesecake").offset().top}
             , 'slow'); 
     });
     $("#cannoli-pic").click(function() {
-        console.log("test");
+
         $('html,body').animate({
             scrollTop: $("#cannoli").offset().top}
             , 'slow'); 
@@ -272,7 +272,6 @@ $(document).ready(function(){
         var item = this.parentElement.firstElementChild.innerHTML;
         var price = $(this.parentElement).children().eq(1)[0].innerHTML;
         var src = $(this.parentElement.parentElement.firstElementChild).attr('src');
-        console.log(item, price, src);
 
         var addedItems = $('.addedItems');
 
@@ -297,11 +296,10 @@ $(document).ready(function(){
         var cartItem = document.createElement('div');
         $(cartItem).addClass('cart-item');
 
-        console.log("test");
         var content = 
             `
-                <input type="number" value="1">
-                <div>${price}</div>
+                <input class="quantity" type="number" value="1">
+                <div class="cart-item-price">${price}</div>
                 <img src="${src}" alt="">
                 <div class="addedItems">${item}</div>
                 <div class="removeBtn">Remove</div>
@@ -310,10 +308,37 @@ $(document).ready(function(){
         cartItem.innerHTML = content;
         $('#cart-items-con').append(cartItem);
 
+        priceChange();
     });
 
     //remove from cart
     $(document).on("click", ".removeBtn", function(){
         this.parentElement.remove();
+        priceChange();
+    });
+
+    //quantity change
+    $(document).on("change", ".quantity", function(){
+        priceChange();
+        if(this.value <= 0){
+            this.parentElement.remove();
+        }
     });
 });
+
+function priceChange(){
+    var itemPrice = $(".cart-item-price");
+    var quantity = $(".quantity");
+    var total = 0;
+
+    for(var i = 0; i < itemPrice.length; i++){
+        var multiple = quantity[i].value;  
+        console.log(multiple);
+        var price = parseFloat(itemPrice[i].innerHTML.replace("$", ""));
+
+        for(var j = 0; j < multiple; j++){
+            total += price;
+        }
+    }
+    $("#total-price")[0].innerText = "$" + Math.round(total * 100) / 100;
+}

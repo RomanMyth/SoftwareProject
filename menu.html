@@ -16,7 +16,7 @@
 </head>
 <body class="body">
 
-    <!--Food Item Overlay-->
+    <!--Overlays-->
 
     <div id="overlay">
         <div id="add-error">
@@ -375,6 +375,54 @@
                  <div class="cals">Calories</div>
             </div>
          </div>
+
+         <!--Checkout and Reciept Section-->
+
+         <div id="checkout-con" class="items-info">
+            <div class="row">
+                <div class="itemHead">Cart Checkout</div>
+                <ion-icon name="close-circle-outline" class="closecheck"></ion-icon>
+           </div>
+           <div class="row2">
+                <div class="ingredients">
+                    <div class="ingredHead">Payment Options</div>
+                    <div class="ingredBody paymentbody">
+                        <div class="paymentdiv paymentspc"><ul><img src="./images-menu/60e7f964711cf700048b6a6a.png" alt="Google Pay"></ul></div>
+                        <div class="paymentdiv paymentspc2"><ul><img src="./images-menu/580b57fcd9996e24bc43c530.png" alt="Paypal"></ul></div>
+                        <div class="paymentdiv"><ul><img src="./images-menu/Venmo-Symbol.png" alt="Venmo"></ul></div>
+                        <div class="paymentdiv paymentspc"><ul><img src="./images-menu/2560px-Apple_Pay_logo.svg.png" alt="Apple Pay"></ul></div>
+                    </div>
+                    <div class="ingredHead">Credit / Debit <img src="./images-menu/visa-and-mastercard-logo-26.png" alt="Visa and Mastercard"></div>
+                    <div class="ingredBody">
+                        <form id="paymentform">
+                            <div class="paymentformrow">
+                                <div class="paymentformlabel">
+                                    <label for="name">Name</label>
+                                </div>
+                                <input type="text" name="name" placeholder="John Doe" required>
+                                <div class="paymentformlabel">
+                                    <label for="name">Number</label>
+                                </div>
+                                <input type="text" name="number" placeholder="1111 2222 3333 4444" required>
+                            </div>
+                            <div class="paymentformrow">
+                                <div class="paymentformlabel">
+                                    <label for="date">Exp. Date</label>
+                                </div>
+                                <input type="text" name="date" placeholder="11/11" required>
+                                <div class="paymentformlabel">
+                                    <label for="name">Auth. Code</label>
+                                </div>
+                                <input type="text" name="code" placeholder="111" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="checkoutbottomdiv">
+                        <div class="checkoutbottombtn">Proceed</div>
+                    </div>
+                </div>
+            </div>
+         </div>
     </div>
 
     <!--Header-->
@@ -705,7 +753,7 @@
         
         <div class="cart-checkout">
             <div id="total-price">Total: $0.00</div>
-            <div class="addBtn">Checkout</div>
+            <div class="checkoutBtn">Checkout</div>
         </div>
         <div id="added-to">Item Added to Cart</div>
     </div>

@@ -324,6 +324,25 @@ $(document).ready(function(){
             this.parentElement.remove();
         }
     });
+
+    //Checkout
+    $(".checkoutBtn").click(function(){
+        $("#checkout-con").css("visibility","visible"),
+        $("#overlay").css("visibility","visible")
+    });
+
+    $(".closecheck").click(function(){
+        $("#checkout-con").css("visibility", "hidden");
+        $("#overlay").css("visibility", "hidden");
+        $(".body").css("overflow-y", "visible");
+        console.log("ayp")
+    });
+
+    $(".checkoutbottombtn").click(function(){
+        $("#checkout-con").css("visibility", "hidden");
+        $("#overlay").css("visibility", "hidden");
+        $(".body").css("overflow-y", "visible");
+    });
 });
 
 function priceChange(){

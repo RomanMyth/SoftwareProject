@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Paradiso Manager Menu Page
+    </title>
+    <link rel="stylesheet" href="./CSS/menu.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./Javascript/menu.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+        <!--Header-->
+
+        <div id="header" class="header">
+            <div class="logo">
+                <img src="./Images-main/honertc_foodtrucklogo_111722.png" alt="food truck" height="75px" id="Logo">
+            </div>
+            <div class="slogan" >
+                <img src="./Images-main/honertc_foodtruckslogan_51222.png" alt="slogan" height="100px" id="Slogan">
+            </div>
+            <div class="Guest">
+                <img src="./Images-main/guest.png" alt="account logo" height="120" id="Guest" >
+            </div>
+        </div>
+    
+        <!--Body-->
+    
+        <div id="body">
+    
+            <!--Sitemap-->
+    
+            <div id="sitemap-con">
+                <div id="map-top">
+                    <div class="map-4">
+                        <h2>Pastas</h2>
+                        <div id="pasta-pic-con">
+                            <figure class="food"><img id="alfredo-pic" src="./images-menu/alfredo1.jpg" alt=""></figure>
+                            <figure class="food"><img id="cScampi-pic" src="./images-menu/Chicken-Scampi.jpg" alt=""></figure>
+                            <figure class="food"><img id="sScampi-pic" src="./images-menu/Shrimp-Scampi.jpg" alt=""></figure>
+                            <figure class="food"><img id="penne-pic" src="./images-menu/Penne-Alla-Vodka.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="map-3">
+                        <h2>Soups</h2>
+                        <div id="soup-pic-con">
+                            <figure class="food"> <img id="italian-pic" src="./images-menu/italianwedding_sq1.jpeg" alt=""></figure>
+                            <figure class="food"> <img id="zuppa-pic" src="./images-menu/zuppa_sq1.jpeg" alt=""></figure>
+                            <figure class="food"><img id="gnocchi-pic" src="./images-menu/chicken-gnocchi-soup-15.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="map-4">
+                        <h2>Sides</h2>
+                        <div id="sides-pic-con">
+                            <figure class="food"> <img id="bread-pic" src="./images-menu/Garlic-Bread.jpg" alt=""></figure>
+                            <figure class="food"><img id="salad-pic" src="./images-menu/caesar-salad-10-1200.jpg" alt=""></figure>
+                            <figure class="food"><img id="risotto-pic" src="./images-menu/risotto.jpg" alt="">    </figure>
+                            <figure class="food"><img id="chard-pic" src="./images-menu/Chard.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                </div>
+                <div id="map-bottom">
+                    <div class="map-3">
+                        <h2>Antipastro</h2>
+                        <div id="anti-pic-con">
+                            <figure class="food"><img id="arancini-pic" src="./images-menu/arancini_sq1.jpeg" alt=""></figure>
+                            <figure class="food"><img id="mozz-pic" src="./images-menu/motz1.jpeg" alt=""></figure>
+                            <figure class="food"><img id="zucc-pic" src="./images-menu/grilled.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="map-5">
+                        <h2>Proteins</h2>
+                        <div id="protein-pic-con">
+                            <figure class="food"> <img id="cParm-pic" src="./images-menu/chickenparm_sq1.jpeg" alt=""></figure>
+                            <figure class="food"> <img id="eParm-pic" src="./images-menu/eggparm_sq1.jpeg" alt=""></figure>
+                            <figure class="food"><img id="HotDog-pic" src="./images-menu/italiandog1.jpeg" alt=""></figure>
+                            <figure class="food"><img id="porchetta-pic" src="./images-menu/porchetta_sq2.jpeg" alt=""></figure>
+                            <figure class="food"> <img id="stromboli-pic" src="./images-menu/Stromboli.webp" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="map-3">
+                        <h2>Sweets</h2>
+                        <div id="sweet-pic-con">
+                            <figure class="food"><img id="ice-pic" src="./images-menu/italianice_sq1.jpeg" alt=""></figure>
+                            <figure class="food"><img id="cheesecake-pic" src="./images-menu/cheesecake_sq1.jpeg" alt=""></figure>
+                            <figure class="food"><img id="cannoli-pic" src="./images-menu/churro-cannolis-square.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Main-->
+    
+        <div id="menu-con">
+    
+            <!--Soups Section-->
+    
+            <div id="soups">
+                <div class="banner"><h1>Soups</h1></div>
+                <div id="italian" class="item">
+                    <img class="menu-pic" src="./images-menu/italianwedding_sq1.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Italian Wedding Soup</div>
+                        <div class="itemPrice">$14.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="zuppa" class="item">
+                    <img class="menu-pic" src="./images-menu/zuppa_sq1.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Zuppa Tuscano</div>
+                        <div class="itemPrice">$13.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="gnocchi" class="item">
+                    <img class="menu-pic" src="./images-menu/chicken-gnocchi-soup-15.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Chicken Gnocchi Soup</div>
+                        <div class="itemPrice">$14.49</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Sides Section-->
+    
+            <div id="sides">
+                <div class="banner"><h1>Sides</h1></div>
+                <div id="bread" class="item">
+                    <img class="menu-pic" src="./images-menu/Garlic-Bread.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Garlic Bread</div>
+                        <div class="itemPrice">$3.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="salad" class="item">
+                    <img class="menu-pic" src="./images-menu/caesar-salad-10-1200.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Caesar Salad</div>
+                        <div class="itemPrice">$6.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="risotto" class="item">
+                    <img class="menu-pic" src="./images-menu/risotto.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Parmesan Risotto</div>
+                        <div class="itemPrice">$12.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="chard" class="item">
+                    <img class="menu-pic" src="./images-menu/Chard.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Sauteed Rainbow Chard</div>
+                        <div class="itemPrice">$9.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Antipastro Section-->
+    
+            <div id="anti">
+                <div class="banner"><h1>Antipastro</h1></div>
+                <div id="arancini" class="item">
+                    <img class="menu-pic" src="./images-menu/arancini_sq1.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Stuffed Arancini</div>
+                        <div class="itemPrice">$12.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="mozz" class="item">
+                    <img class="menu-pic" src="./images-menu/motz1.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Cheesy Mozzarela Sticks</div>
+                        <div class="itemPrice">$5.00</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="zucc" class="item">
+                    <img class="menu-pic" src="./images-menu/grilled.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Grilled Zucchini</div>
+                        <div class="itemPrice">$9.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Pasta Section-->
+    
+            <div id="pasta">
+                <div class="banner"><h1>Pastas</h1></div>
+                <div id="alfredo" class="item">
+                    <img class="menu-pic" src="./images-menu/alfredo1.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Fettuuccine Alfredo</div>
+                        <div class="itemPrice">$14.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="cScampi" class="item">
+                    <img class="menu-pic" src="./images-menu/Chicken-Scampi.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Chicken Scampi</div>
+                        <div class="itemPrice">$15.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="sScampi" class="item">
+                    <img class="menu-pic" src="./images-menu/Shrimp-Scampi.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Shrimp Scampi</div>
+                        <div class="itemPrice">$15.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="penne" class="item">
+                    <img class="menu-pic" src="./images-menu/Penne-Alla-Vodka.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Penne Alla Vodka</div>
+                        <div class="itemPrice">$14.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Protein Section-->
+    
+            <div id="protein">
+                <div class="banner"><h1>Proteins</h1></div>
+                <div id="cParm" class="item">
+                    <img class="menu-pic" src="./images-menu/chickenparm_sq1.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Chicken Parmesan</div>
+                        <div class="itemPrice">$13.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="eParm" class="item">
+                    <img class="menu-pic" src="./images-menu/eggparm_sq1.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Eggplant Parm</div>
+                        <div class="itemPrice">$12.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="HotDog" class="item">
+                    <img class="menu-pic" src="./images-menu/italiandog1.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Italian Hot Dog</div>
+                        <div class="itemPrice">$8.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="porchetta" class="item">
+                    <img class="menu-pic" src="./images-menu/porchetta_sq2.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Roasted Porchetta</div>
+                        <div class="itemPrice">$14.49</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="stromboli" class="item">
+                    <img class="menu-pic" src="./images-menu/Stromboli.webp" alt="">
+                    <div class="info-con">
+                        <div class="price">Stromboli</div>
+                        <div class="itemPrice">$13.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Sweets Section-->
+    
+            <div id="sweets">
+                <div class="banner"><h1>Sweets</h1></div>
+                <div id="ice" class="item">
+                    <img class="menu-pic" src="./images-menu/italianice_sq1.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Italian Ice</div>
+                        <div class="itemPrice">$5.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="cheesecake" class="item">
+                    <img class="menu-pic" src="./images-menu/cheesecake_sq1.jpeg" alt="">
+                    <div class="info-con">
+                        <div class="price">Cheesecake</div>
+                        <div class="itemPrice">$12.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+                <div id="cannoli" class="item">
+                    <img class="menu-pic" src="./images-menu/churro-cannolis-square.jpg" alt="">
+                    <div class="info-con">
+                        <div class="price">Cannoli</div>
+                        <div class="itemPrice">$5.99</div>
+                        <div class="addBtn">Add</div>
+                        <div class="more-info">Click Card for more item info</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-btn-con">
+            <a class="receipt-logout-btn" href="/Index.html">Save Changes</a>
+        </div>
+</body>
+</html>

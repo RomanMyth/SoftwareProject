@@ -787,3 +787,7 @@ margin-top: 10px;
 .receipt-logout-btn:hover , .receipt-refresh-btn:hover{
     background-color: salmon;
 }
+
+.bottom-btn-con{
+    margin: 30px;
+}

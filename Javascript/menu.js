@@ -308,6 +308,20 @@ $(document).ready(function(){
         cartItem.innerHTML = content;
         $('#cart-items-con').append(cartItem);
 
+        //Receipt Section
+
+        var receiptItem = document.createElement('div');
+        $(receiptItem).addClass('receipt-item');
+        var rcontent = 
+            `
+                <div class="receipt-item-price">${price}</div>
+                <img src="${src}" alt="">
+                <div class="addedReceiptItems">${item}</div>
+            `;
+
+        receiptItem.innerHTML = rcontent;
+        $('#receipt-main').append(receiptItem);
+
         priceChange();
     });
 
@@ -325,7 +339,7 @@ $(document).ready(function(){
         }
     });
 
-    //Checkout
+    //Checkout Section
    
     $(".checkoutBtn").click(function(){ 
         var added = $('.addedItems');
@@ -333,6 +347,8 @@ $(document).ready(function(){
         if (added.length > 0){
             $("#checkout-con").css("visibility","visible"),
             $("#overlay").css("visibility","visible")
+            
+            
         }
         else {
             console.log("nothing");
@@ -408,8 +424,18 @@ $(document).ready(function(){
         }
         selected4 = !selected4;
     });
+    $(".checkoutbottombtn").click(function(){
+        $("#receipt-con").css("display", "flex");
+        $("#cart-con").css("display", "none")
+    });
+
+    //Receipt Section
+    $(".receipt-refresh-btn").click(function(){
+        window.location.reload();
+    });
 });
 
+//Price Change Function
 function priceChange(){
     var itemPrice = $(".cart-item-price");
     var quantity = $(".quantity");

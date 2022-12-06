@@ -627,7 +627,7 @@ margin-top: 10px;
     text-align: center;
 }
 
-/* Checkout / Receipt Section */
+/* Checkout */
 
 #checkout-con{
     visibility: hidden;
@@ -694,4 +694,18 @@ margin-top: 10px;
 }
 .checkoutbottombtn:hover{
     background-color: salmon;
+}
+
+/* Receipt Section */
+
+#receipt-con{
+    background-color: #34526f;
+    width: 80%;
+    height: 10em;
+    margin: 20px auto;
+}
+#receipt-banner{
+    background-color: #fff;
+    width: 100%;
+    height: 5em;
 }

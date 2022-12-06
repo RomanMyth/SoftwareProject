@@ -282,7 +282,7 @@ $(document).ready(function(){
                 $("#add-error").css("visibility", "visible");
                 return;
             }
-            else if(i == addedItems.length -1){
+            else if(i == addedItems.length -addedItems.length1){
                 $("#added-to").css('display', 'flex').hide().fadeIn('normal');
                 $("#added-to").delay(750).fadeOut('normal');
             }
@@ -326,10 +326,19 @@ $(document).ready(function(){
     });
 
     //Checkout
-    $(".checkoutBtn").click(function(){
-        $("#checkout-con").css("visibility","visible"),
-        $("#overlay").css("visibility","visible")
+   
+    $(".checkoutBtn").click(function(){ 
+        var added = $('.addedItems');
+        console.log(added.length);
+        if (added.length > 0){
+            $("#checkout-con").css("visibility","visible"),
+            $("#overlay").css("visibility","visible")
+        }
+        else {
+            console.log("nothing");
+        }
     });
+    
 
     $(".closecheck").click(function(){
         $("#checkout-con").css("visibility", "hidden");

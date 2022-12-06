@@ -314,6 +314,7 @@ $(document).ready(function(){
         $(receiptItem).addClass('receipt-item');
         var rcontent = 
             `
+                <div class="finalQuantity"></div>
                 <div class="receipt-item-price">${price}</div>
                 <img src="${src}" alt="">
                 <div class="addedReceiptItems">${item}</div>
@@ -343,15 +344,14 @@ $(document).ready(function(){
    
     $(".checkoutBtn").click(function(){ 
         var added = $('.addedItems');
-        console.log(added.length);
+        var receiptItems = $(".receipt-item");
+        var itemQaunt = $(".quantity");
         if (added.length > 0){
             $("#checkout-con").css("visibility","visible"),
             $("#overlay").css("visibility","visible")
-            
-            
-        }
-        else {
-            console.log("nothing");
+            for(var i = 0; i < added.length; i++){
+                receiptItems[i].firstElementChild.innerHTML = itemQaunt[i].value;
+            }  
         }
     });
     
@@ -427,6 +427,20 @@ $(document).ready(function(){
     $(".checkoutbottombtn").click(function(){
         $("#receipt-con").css("display", "flex");
         $("#cart-con").css("display", "none")
+
+        var itemPrice = $(".receipt-item-price");
+        var totalPrice = 0;
+        var quantity = $(".finalQuantity");
+        for(var i = 0; i < itemPrice.length; i++){
+            var multiple = quantity[i].innerHTML;
+            var price = parseFloat(itemPrice[i].innerHTML.replace("$", ""));
+
+            for(var j = 0; j < multiple; j++){
+                totalPrice += price;
+            }
+        }
+
+        $("#receipt-total-price")[0].innerHTML = "Total: $" + Math.round(totalPrice * 100) / 100;
     });
 
     //Receipt Section
@@ -443,7 +457,6 @@ function priceChange(){
 
     for(var i = 0; i < itemPrice.length; i++){
         var multiple = quantity[i].value;  
-        console.log(multiple);
         var price = parseFloat(itemPrice[i].innerHTML.replace("$", ""));
 
         for(var j = 0; j < multiple; j++){

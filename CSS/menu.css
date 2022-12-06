@@ -761,6 +761,11 @@ margin-top: 10px;
     text-align: center;
     border-bottom: 2px solid #fff;
 }
+#receipt-total-price{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
 .receipt-btn-div{
     width: 49%;
     margin: 0px auto;

@@ -335,13 +335,69 @@ $(document).ready(function(){
         $("#checkout-con").css("visibility", "hidden");
         $("#overlay").css("visibility", "hidden");
         $(".body").css("overflow-y", "visible");
-        console.log("ayp")
     });
 
     $(".checkoutbottombtn").click(function(){
         $("#checkout-con").css("visibility", "hidden");
         $("#overlay").css("visibility", "hidden");
         $(".body").css("overflow-y", "visible");
+    });
+
+    var selected1 = false;
+    var selected2 = false;
+    var selected3 = false;
+    var selected4 = false;
+    $(".paymentdiv1").click(function(){
+        if (selected1) {
+            $(".paymentdiv1").css("border", "2px solid #9f9f9f");
+
+        }
+        else{
+            $(".paymentdiv1").css("border", "2px solid black");
+            $(".paymentdiv2").css("border", "2px solid #9f9f9f");
+            $(".paymentdiv3").css("border", "2px solid #9f9f9f");
+            $(".paymentdiv4").css("border", "2px solid #9f9f9f");
+        }
+        selected1 = !selected1;
+    });
+    $(".paymentdiv2").click(function(){
+        if (selected2) {
+            $(".paymentdiv2").css("border", "2px solid #9f9f9f");
+
+        }
+        else{
+            $(".paymentdiv2").css("border", "2px solid black");
+            $(".paymentdiv1").css("border", "2px solid #9f9f9f");
+            $(".paymentdiv3").css("border", "2px solid #9f9f9f");
+            $(".paymentdiv4").css("border", "2px solid #9f9f9f");
+        }
+        selected2 = !selected2;
+    });
+    $(".paymentdiv3").click(function(){
+        if (selected3) {
+            $(".paymentdiv3").css("border", "2px solid #9f9f9f");
+
+        }
+        else{
+            $(".paymentdiv3").css("border", "2px solid black");
+            $(".paymentdiv1").css("border", "2px solid #9f9f9f");
+            $(".paymentdiv2").css("border", "2px solid #9f9f9f");
+            $(".paymentdiv4").css("border", "2px solid #9f9f9f");
+        }
+        selected3 = !selected3;
+    });
+    $(".paymentdiv4").click(function(){
+        if (selected4) {
+            $(".paymentdiv4").css("border", "2px solid #9f9f9f");
+
+        }
+        else{
+            $(".paymentdiv4").css("border", "2px solid black");
+            $(".paymentdiv1").css("border", "2px solid #9f9f9f");
+            $(".paymentdiv2").css("border", "2px solid #9f9f9f");
+            $(".paymentdiv3").css("border", "2px solid #9f9f9f");
+        }
+        selected4 = !selected4;
     });
 });
 
